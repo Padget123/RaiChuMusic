@@ -80,7 +80,7 @@ async def get_uptime(client: Client, message: Message):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await message.reply_text(
-        "🤖 🅡🅐🅘🅒🅗🅤  🅑🅞🅣  🅢🅣🅐🅣🅢:\n"
+        "🤖 Alisha Bot Stats:\n"
         f"➤ **ᴜᴘᴛɪᴍᴇ:** `{uptime}`\n"
         f"➤ **sᴛᴀʀᴛ ᴛɪᴍᴇ:** `{START_TIME_ISO}`"
     )
